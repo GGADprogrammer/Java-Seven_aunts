@@ -1,0 +1,27 @@
+<!--client/pages/viewmen/viewmen.wxml-->
+
+
+<view class="cu-card article {{isCard?'no-card':''}}"  wx:for="{{relatives}}" 
+wx:for-item="man" wx:key="{{man._id}}" id="{{man._id}}">
+  <view class="cu-item shadow">
+    <view class="title">
+      <view class="text-cut">{{man.identity}}:{{man.name}}</view>
+    </view>
+    <view class="content">
+      <image src="{{man.url}}" mode="aspectFill"></image>
+      <view class="desc">
+      
+        <view class="text-content"> <text class="text-Abc">phone:{{man.phone}}</text><text class="padding">{{man.demo}}</text></view>
+        
+        <view>
+          <view class="cu-tag bg-blue light sm round" wx:if="{{man.gender}}">男</view>
+          <view class="cu-tag bg-pink light sm round"wx:if="{{!man.gender}}">女</view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+<view class="padding flex flex-direction">
+  <button class="cu-btn bg-grey lg" bindtap="nv">添加亲戚</button>
+
+</view>

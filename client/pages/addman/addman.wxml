@@ -1,0 +1,80 @@
+<!--client/pages/addman/addman.wxml-->
+
+<form bindsubmit="back_houtai">
+	<view class="cu-form-group margin-top">
+		<view class="title">姓名</view>
+		<input placeholder="无" name="name"></input>
+	</view>
+	<view class="cu-form-group">
+		<view class="title">身份</view>
+		<input placeholder="输入计算器计算结果吧~" name="identity"></input>
+	</view>
+	<!--<view class="cu-form-group">
+		<view class="title">收货地址</view>
+		<input placeholder="统一标题的宽度"></input>
+	</view>-->
+	<!--<view class="cu-form-group">
+		<view class="title">性别</view>
+		<input placeholder="输入男或者女" name="gender"></input>
+		<text class="cuIcon-locationfill text-orange"></text>
+	</view>-->
+	
+	<view class="cu-form-group">
+		<view class="title">手机号码</view>
+		<input placeholder="手机号码" name="phone"></input>
+		<view class="cu-capsule radius">
+			<view class="cu-tag bg-blue">
+				+86
+			</view>
+			<view class="cu-tag line-blue">
+				中国大陆
+			</view>
+		</view>
+	</view>
+	
+	
+	
+	<view class="cu-form-group">
+		<switch class="switch-sex" checked="checked" name="gender"></switch>
+		<view class="title">选择性别</view>
+	</view>
+	
+		
+	<view class="cu-bar bg-white margin-top">
+		<view class="action">
+			图片上传
+		</view>
+		<view class="action">
+			{{imgList.length}}/4
+		</view>
+	</view>
+	<view class="cu-form-group">
+		<view class="grid col-4 grid-square flex-sub">
+			<view class="bg-img" wx:for="{{imgList}}" wx:key="{{index}}" bindtap="ViewImage" data-url="{{imgList[index]}}">
+				<image src='{{imgList[index]}}' mode='aspectFill'></image>
+				<view class="cu-tag bg-red" catchtap="DelImg" data-index="{{index}}">
+					<text class="cuIcon-close"></text>
+				</view>
+			</view>
+			<view class="solids" bindtap="ChooseImage" wx:if="{{imgList.length<4}}">
+				<text class="cuIcon-cameraadd"></text>
+			</view>
+		</view>
+	</view>
+
+	<!-- !!!!! placeholder 在ios表现有偏移 建议使用 第一种样式 -->
+
+		
+	<view class="cu-form-group align-start">
+		<view class="title">备注</view>
+		<textarea maxlength="-1" disabled="{{modalName!=null}}" bindinput="textareaBInput" placeholder="输入你对他（她）独特的描述吧！" name="demo"></textarea>
+	</view>
+ 
+
+<view class="padding flex flex-direction">
+
+  <button class="cu-btn bg-red margin-tb-sm lg" formType="submit" bindtap="nv">确定添加</button>
+</view>
+
+
+</form>

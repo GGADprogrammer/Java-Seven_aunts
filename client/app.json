@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/loginornot/loginornot",
+    "pages/index/index",
+    
+    "pages/welcome/welcome",
+    "pages/about/about",
+    "pages/addman/addman",
+    "pages/viewmen/viewmen"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#053147",
+    "navigationBarTitleText": "亲戚称呼计算",
+    "navigationBarTextStyle": "white"
+  },
+  "sitemapLocation": "sitemap.json",
+  "cloud": true
+}

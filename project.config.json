@@ -1,0 +1,54 @@
+{
+	"client": "client/",
+	"svr": "server/",
+	"miniprogramRoot": "client/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"qcloudRoot": "server/",
+	"setting": {},
+	"appid": "wxd7752139c37a99d5",
+	"projectname": "%E4%BA%B2%E6%88%9Asearch",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"miniprogram": {
+			"current": 2,
+			"list": [
+				{
+					"id": -1,
+					"name": "addman",
+					"pathName": "pages/addman/addman",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 1,
+					"name": "viewmen",
+					"pathName": "pages/viewmen/viewmen",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "loginornot",
+					"pathName": "pages/loginornot/loginornot",
+					"scene": null
+				}
+			]
+		}
+	}
+}

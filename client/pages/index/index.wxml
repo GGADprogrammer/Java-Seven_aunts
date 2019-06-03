@@ -1,0 +1,23 @@
+<!--index.wxml-->
+<view class="container">
+  <image class="main-bg" src="../images/timg.jpg"></image>
+  <view class="userinfo">
+  <!-- 
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+  -->
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+   
+  </view>
+  <view class="usermotto">
+    <text class="user-motto">{{motto}}</text>
+  </view>
+  <view class="padding flex flex-direction">
+  <button class="cu-btn bg-yellow lg" bindtap="bindViewTap">  查询  </button>
+  <button class="cu-btn bg-blue margin-tb-sm lg" bindtap="bindViewTap1">查看我的亲戚</button>
+</view>
+
+
+</view>
+
+
