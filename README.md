@@ -22,4 +22,10 @@
   Users can add a relative's information into the system's database so that they can check the information later.
 2) System Usage Details: ✖ on the Calculator page means clear the previous relationship. AC on the Calculator page means clear all relationships.
 Algorithm referenced from [another github project](https://github.com/mumuy/relationship).
-
+![](IMG_2637(20191229-134600).jpg)
+![](/IMG_2638.PNG)
+![](/IMG_2639.PNG)
+![](/IMG_2640(20191229-134620).jpg)
+![](IMG_2641(20191229-134638).jpg)
+![](IMG_2642(20191229-134645).jpg)
+![](IMG_2643(20191229-134652).jpg)
